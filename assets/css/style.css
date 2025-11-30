@@ -322,6 +322,7 @@ nav {
   font-size: 3rem;
   position: relative;
   z-index: 2;
+  object-fit: cover;
 }
 
 .news-content {
