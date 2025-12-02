@@ -967,6 +967,10 @@ footer {
   font-size: 14px;
 }
 
+.footer-bottom p{
+  margin-bottom: 0;
+}
+
 /* Scroll animations */
 .scroll-animate {
   opacity: 0;
