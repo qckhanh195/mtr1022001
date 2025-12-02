@@ -1,749 +1,641 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bảo Vệ Môi Trường - Hành Động Vì Tương Lai Xanh</title>
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/base.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
 
-  <body>
-    <!-- Header -->
-    <header>
-      <nav>
-        <a href="#home" class="logo">
-          <img src="./assets/images/logo.png" alt="" />
-          <p>NHÓM CNTT</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bảo Vệ Môi Trường - Hành Động Vì Tương Lai Xanh</title>
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="#home" class="logo">
+        <img src="./assets/images/logo.png" alt="" />
+        <p>NHÓM CNTT</p>
+      </a>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Trang Chủ</a></li>
+        <li><a href="#about">Giới Thiệu</a></li>
+        <li><a href="#news">Tin Tức</a></li>
+        <li><a href="#tips">Kiến Thức</a></li>
+        <li><a href="#solutions">Giải Pháp</a></li>
+        <li><a href="#videos">Video</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+
+    <div class="hero-content">
+      <h1><span class="emoji">🌍</span>BẢO VỆ MÔI TRƯỜNG</h1>
+      <p>
+        Việt Nam đang đối mặt với khủng hoảng môi trường nghiêm trọng. Mỗi
+        hành động của bạn hôm nay quyết định tương lai của chúng ta!
+      </p>
+      <a href="#contact" class="cta-button">Liên Hệ Ngay</a>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section id="about" class="stats scroll-animate">
+    <h2 class="stats-title">📊 THỰC TRẠNG MÔI TRƯỜNG VIỆT NAM</h2>
+    <div class="stats-container">
+      <div class="stat-item">
+        <div class="stat-number">23</div>
+        <div class="stat-label">
+          Thứ hạng toàn cầu<br />về ô nhiễm không khí
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">4.9x</div>
+        <div class="stat-label">
+          Nồng độ bụi mịn PM2.5<br />vượt ngưỡng WHO
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">70,000</div>
+        <div class="stat-label">
+          Người tử vong mỗi năm<br />do ô nhiễm không khí
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">1.8M</div>
+        <div class="stat-label">
+          Tấn rác thải nhựa<br />mỗi năm tại Việt Nam
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">27%</div>
+        <div class="stat-label">Tỷ lệ tái chế<br />rác thải nhựa</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">68,000</div>
+        <div class="stat-label">
+          Tấn chất thải rắn<br />sinh hoạt mỗi ngày
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">10%</div>
+        <div class="stat-label">Mức tăng ô nhiễm<br />không khí năm 2024</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">30B</div>
+        <div class="stat-label">Túi ni lông được<br />sử dụng mỗi năm</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Events Section -->
+  <section id="news" class="news-events">
+    <div class="news-container">
+      <h2 class="section-title">📰 TIN TỨC & SỰ KIỆN</h2>
+      <div class="news-grid">
+        <a href="https://nhandan.vn/special/nangiaibaitoan_moitruong_saulu/index.html" class="news-card"
+          target="_blank">
+          <img
+            src="https://nhandan.vn/special/nangiaibaitoan_moitruong_saulu/assets/73TZZZLmdr/ngu-o-i-da-n-va-ca-c-lu-c-lu-o-ng-chu-c-na-ng-da-na-ng-do-n-bu-n-ve-sinh-su-a-chu-a-co-so-va-t-cha-t.-1440x1036.jpg"
+            alt="" class="news-image-placeholder" />
+          <div class="news-content">
+            <span class="news-date">01/11/2025</span>
+            <h3 class="news-title">Nan giải "bài toán" môi trường sau lũ</h3>
+            <p class="news-description">
+              Nước lũ rút đi nhưng cuộc sống của người dân các tỉnh, thành phố
+              như Đà Nẵng, Huế, Quảng Trị,... đang bị đe dọa bởi nguy cơ ô
+              nhiễm môi trường do rác thải, bùn đất,...
+            </p>
+            <span class="read-more">Đọc thêm →</span>
+          </div>
         </a>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#home">Trang Chủ</a></li>
-          <li><a href="#about">Giới Thiệu</a></li>
-          <li><a href="#news">Tin Tức</a></li>
-          <li><a href="#tips">Kiến Thức</a></li>
-          <li><a href="#solutions">Giải Pháp</a></li>
-          <li><a href="#videos">Video</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
-      <div class="particle"></div>
+        <a href="https://laodong.vn/xa-hoi/o-nhiem-khong-khi-va-giai-phap-giao-thong-xanh-cho-tuong-lai-1612773.ldo"
+          class="news-card" target="_blank">
+          <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2025/11/21/1612773/Tau-Dien-6.jpg?w=660" alt=""
+            class="news-image-placeholder" />
+          <div class="news-content">
+            <span class="news-date">21/11/2025</span>
+            <h3 class="news-title">
+              Ô nhiễm không khí và giải pháp giao thông xanh cho tương lai
+            </h3>
+            <p class="news-description">
+              Tại Nghị quyết về phát triển kinh tế xã hội 2026 được Quốc hội
+              biểu quyết thông qua, với trên 90,5% đại biểu tán thành, Chính
+              phủ được giao lập đề án xử lý tình trạng ô nhiễm không khí tại
+              Hà Nội, TPHCM vào 2026, đồng thời điều chỉnh lộ trình áp dụng
+              chuẩn khí thải xe máy và ôtô.
+            </p>
+            <span class="read-more">Đọc thêm →</span>
+          </div>
+        </a>
 
-      <div class="hero-content">
-        <h1><span class="emoji">🌍</span>BẢO VỆ MÔI TRƯỜNG</h1>
-        <p>
-          Việt Nam đang đối mặt với khủng hoảng môi trường nghiêm trọng. Mỗi
-          hành động của bạn hôm nay quyết định tương lai của chúng ta!
-        </p>
-        <a href="#contact" class="cta-button">Liên Hệ Ngay</a>
+        <a href="https://tuoitre.vn/bat-dung-benh-va-can-nhieu-giai-phap-dai-hoi-de-tri-o-nhiem-khong-khi-o-do-thi-20251125143830733.htm"
+          class="news-card" target="_blank">
+          <img
+            src="https://cdn2.tuoitre.vn/thumb_w/730/471584752817336320/2025/11/25/base64-17640550755781304830812.jpeg"
+            alt="" class="news-image-placeholder" />
+          <div class="news-content">
+            <span class="news-date">25/11/2025</span>
+            <h3 class="news-title">
+              Bắt đúng 'bệnh' và cần nhiều giải pháp dài hơi để 'trị' ô nhiễm
+              không khí ở đô thị
+            </h3>
+            <p class="news-description">
+              Chia sẻ tại tọa đàm 'Cải thiện chất lượng môi trường không khí
+              đô thị' đại diện cơ quan quản lý nhà nước, chuyên gia, nhà khoa
+              học cho rằng cần phải bắt đúng "bệnh" và cần nhiều giải pháp dài
+              hơi để 'trị' ô nhiễm không khí ở đô thị.
+            </p>
+            <span class="read-more">Đọc thêm →</span>
+          </div>
+        </a>
+
+        <a href="https://laodong.vn/moi-truong/da-nang-phat-trien-kinh-te-xanh-de-tro-thanh-thanh-pho-sinh-thai-hang-dau-1616710.ldo"
+          class="news-card" target="_blank">
+          <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2025/11/28/1616710/Toan-Canh-Danang.jpg?w=660"
+            alt="" class="news-image-placeholder" />
+          <div class="news-content">
+            <span class="news-date">28/11/2025</span>
+            <h3 class="news-title">
+              Đà Nẵng phát triển kinh tế xanh để trở thành thành phố sinh thái
+              hàng đầu
+            </h3>
+            <p class="news-description">
+              Đà Nẵng thúc đẩy kinh tế tuần hoàn, năng lượng sạch và du lịch
+              xanh nhằm xây dựng đô thị sinh thái, thông minh và hướng tới Net
+              Zero trước năm 2050.
+            </p>
+            <span class="read-more">Đọc thêm →</span>
+          </div>
+        </a>
+
+        <a href="https://kinhtedothi.vn/thuc-day-hop-tac-viet-nam-trung-quoc-trong-linh-vuc-nong-nghiep-va-moi-truong.922793.html"
+          class="news-card" target="_blank">
+          <img src="https://resource.kinhtedothi.vn/resources2025/1/users/49/2-1764402885.jpg" alt=""
+            class="news-image-placeholder" />
+          <div class="news-content">
+            <span class="news-date">29/11/2025</span>
+            <h3 class="news-title">
+              Thúc đẩy hợp tác Việt Nam - Trung Quốc trong lĩnh vực nông
+              nghiệp và môi trường
+            </h3>
+            <p class="news-description">
+              Trong 3 ngày, từ 26 - 28/11, đoàn công tác Bộ Nông nghiệp và Môi
+              trường đã có chuyến thăm và làm việc với 7 bộ ngành, địa phương,
+              doanh nghiệp của Trung Quốc. Qua đó, đạt được nhiều kết quả tích
+              cực về hợp tác, chia sẻ kinh nghiệm trong các lĩnh vực nông
+              nghiệp và môi trường.
+            </p>
+            <span class="read-more">Đọc thêm →</span>
+          </div>
+        </a>
+
+        <a href="https://kinhtedothi.vn/doi-moi-tu-duy-bao-ve-moi-truong-thu-do.922445.html" class="news-card"
+          target="_blank">
+          <img src="https://resource.kinhtedothi.vn/resources2025/1/users/49/ha-noi-1764344035.jpeg" alt=""
+            class="news-image-placeholder" />
+          <div class="news-content">
+            <span class="news-date">29/11/2025</span>
+            <h3 class="news-title">
+              Đổi mới tư duy bảo vệ môi trường Thủ đô
+            </h3>
+            <p class="news-description">
+              Là thủ đô với quy mô dân số lớn, công tác vệ sinh môi trường
+              trên địa bàn Hà Nội không chỉ dừng lại ở việc “sạch đường,
+              thoáng phố”, mà phải được nhìn nhận toàn diện và chủ động trong
+              các tình huống, từ cách tiếp cận “giải quyết sự vụ” sang “chủ
+              động phòng ngừa và đầu tư dài hạn”.
+            </p>
+            <span class="read-more">Đọc thêm →</span>
+          </div>
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Stats Section -->
-    <section id="about" class="stats scroll-animate">
-      <h2 class="stats-title">📊 THỰC TRẠNG MÔI TRƯỜNG VIỆT NAM</h2>
-      <div class="stats-container">
-        <div class="stat-item">
-          <div class="stat-number">23</div>
-          <div class="stat-label">
-            Thứ hạng toàn cầu<br />về ô nhiễm không khí
-          </div>
+  <!-- Features Section -->
+  <section id="tips" class="features scroll-animate">
+    <div class="features-container">
+      <h2 class="section-title">🌱 HÀNH ĐỘNG VÌ MÔI TRƯỜNG</h2>
+      <div class="features-grid">
+        <div class="feature-card" onclick="openModal('recycle')">
+          <div class="feature-icon">♻️</div>
+          <h3 class="feature-title">Tái Chế Thông Minh</h3>
+          <p class="feature-description">
+            Phân loại rác tại nguồn, tái sử dụng vật liệu và giảm thiểu chất
+            thải nhựa trong cuộc sống hàng ngày. Mục tiêu nâng tỷ lệ tái chế
+            lên 50% vào 2030.
+          </p>
         </div>
-        <div class="stat-item">
-          <div class="stat-number">4.9x</div>
-          <div class="stat-label">
-            Nồng độ bụi mịn PM2.5<br />vượt ngưỡng WHO
-          </div>
+        <div class="feature-card" onclick="openModal('plant')">
+          <div class="feature-icon">🌳</div>
+          <h3 class="feature-title">Trồng Cây Xanh</h3>
+          <p class="feature-description">
+            Tham gia các chương trình trồng cây, bảo vệ rừng và tạo không gian
+            xanh trong cộng đồng. Mỗi cây trồng hấp thụ 22kg CO2/năm.
+          </p>
         </div>
-        <div class="stat-item">
-          <div class="stat-number">70,000</div>
-          <div class="stat-label">
-            Người tử vong mỗi năm<br />do ô nhiễm không khí
-          </div>
+        <div class="feature-card" onclick="openModal('electricity')">
+          <div class="feature-icon">💡</div>
+          <h3 class="feature-title">Tiết Kiệm Năng Lượng</h3>
+          <p class="feature-description">
+            Sử dụng đèn LED, thiết bị tiết kiệm điện và năng lượng tái tạo để
+            giảm khí thải carbon. Có thể tiết kiệm 30-50% điện năng.
+          </p>
         </div>
-        <div class="stat-item">
-          <div class="stat-number">1.8M</div>
-          <div class="stat-label">
-            Tấn rác thải nhựa<br />mỗi năm tại Việt Nam
-          </div>
+        <div class="feature-card" onclick="openModal('transport')">
+          <div class="feature-icon">🚲</div>
+          <h3 class="feature-title">Giao Thông Xanh</h3>
+          <p class="feature-description">
+            Ưu tiên đi bộ, xe đạp, phương tiện công cộng thay vì xe máy, ô tô
+            cá nhân. Giảm 2.3 tấn CO2/năm cho mỗi hộ gia đình.
+          </p>
         </div>
-        <div class="stat-item">
-          <div class="stat-number">27%</div>
-          <div class="stat-label">Tỷ lệ tái chế<br />rác thải nhựa</div>
+        <div class="feature-card" onclick="openModal('plastic')">
+          <div class="feature-icon">🥬</div>
+          <h3 class="feature-title">Giảm Rác Nhựa</h3>
+          <p class="feature-description">
+            Chọn sản phẩm hữu cơ, địa phương và giảm thiểu thực phẩm dư thừa,
+            lãng phí. Giảm 25% lượng rác thải hàng ngày.
+          </p>
         </div>
-        <div class="stat-item">
-          <div class="stat-number">68,000</div>
-          <div class="stat-label">
-            Tấn chất thải rắn<br />sinh hoạt mỗi ngày
-          </div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">10%</div>
-          <div class="stat-label">Mức tăng ô nhiễm<br />không khí năm 2024</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">30B</div>
-          <div class="stat-label">Túi ni lông được<br />sử dụng mỗi năm</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- News & Events Section -->
-    <section id="news" class="news-events">
-      <div class="news-container">
-        <h2 class="section-title">📰 TIN TỨC & SỰ KIỆN</h2>
-        <div class="news-grid">
-          <a
-            href="https://nhandan.vn/special/nangiaibaitoan_moitruong_saulu/index.html"
-            class="news-card"
-            target="_blank"
-          >
-            <img
-              src="https://nhandan.vn/special/nangiaibaitoan_moitruong_saulu/assets/73TZZZLmdr/ngu-o-i-da-n-va-ca-c-lu-c-lu-o-ng-chu-c-na-ng-da-na-ng-do-n-bu-n-ve-sinh-su-a-chu-a-co-so-va-t-cha-t.-1440x1036.jpg"
-              alt=""
-              class="news-image-placeholder"
-            />
-            <div class="news-content">
-              <span class="news-date">01/11/2025</span>
-              <h3 class="news-title">Nan giải "bài toán" môi trường sau lũ</h3>
-              <p class="news-description">
-                Nước lũ rút đi nhưng cuộc sống của người dân các tỉnh, thành phố
-                như Đà Nẵng, Huế, Quảng Trị,... đang bị đe dọa bởi nguy cơ ô
-                nhiễm môi trường do rác thải, bùn đất,...
-              </p>
-              <span class="read-more">Đọc thêm →</span>
-            </div>
-          </a>
-
-          <a
-            href="https://laodong.vn/xa-hoi/o-nhiem-khong-khi-va-giai-phap-giao-thong-xanh-cho-tuong-lai-1612773.ldo"
-            class="news-card"
-            target="_blank"
-          >
-            <img
-              src="https://media-cdn-v2.laodong.vn/storage/newsportal/2025/11/21/1612773/Tau-Dien-6.jpg?w=660"
-              alt=""
-              class="news-image-placeholder"
-            />
-            <div class="news-content">
-              <span class="news-date">21/11/2025</span>
-              <h3 class="news-title">
-                Ô nhiễm không khí và giải pháp giao thông xanh cho tương lai
-              </h3>
-              <p class="news-description">
-                Tại Nghị quyết về phát triển kinh tế xã hội 2026 được Quốc hội
-                biểu quyết thông qua, với trên 90,5% đại biểu tán thành, Chính
-                phủ được giao lập đề án xử lý tình trạng ô nhiễm không khí tại
-                Hà Nội, TPHCM vào 2026, đồng thời điều chỉnh lộ trình áp dụng
-                chuẩn khí thải xe máy và ôtô.
-              </p>
-              <span class="read-more">Đọc thêm →</span>
-            </div>
-          </a>
-
-          <a
-            href="https://tuoitre.vn/bat-dung-benh-va-can-nhieu-giai-phap-dai-hoi-de-tri-o-nhiem-khong-khi-o-do-thi-20251125143830733.htm"
-            class="news-card"
-            target="_blank"
-          >
-            <img
-              src="https://cdn2.tuoitre.vn/thumb_w/730/471584752817336320/2025/11/25/base64-17640550755781304830812.jpeg"
-              alt=""
-              class="news-image-placeholder"
-            />
-            <div class="news-content">
-              <span class="news-date">25/11/2025</span>
-              <h3 class="news-title">
-                Bắt đúng 'bệnh' và cần nhiều giải pháp dài hơi để 'trị' ô nhiễm
-                không khí ở đô thị
-              </h3>
-              <p class="news-description">
-                Chia sẻ tại tọa đàm 'Cải thiện chất lượng môi trường không khí
-                đô thị' đại diện cơ quan quản lý nhà nước, chuyên gia, nhà khoa
-                học cho rằng cần phải bắt đúng "bệnh" và cần nhiều giải pháp dài
-                hơi để 'trị' ô nhiễm không khí ở đô thị.
-              </p>
-              <span class="read-more">Đọc thêm →</span>
-            </div>
-          </a>
-
-          <a
-            href="https://laodong.vn/moi-truong/da-nang-phat-trien-kinh-te-xanh-de-tro-thanh-thanh-pho-sinh-thai-hang-dau-1616710.ldo"
-            class="news-card"
-            target="_blank"
-          >
-            <img
-              src="https://media-cdn-v2.laodong.vn/storage/newsportal/2025/11/28/1616710/Toan-Canh-Danang.jpg?w=660"
-              alt=""
-              class="news-image-placeholder"
-            />
-            <div class="news-content">
-              <span class="news-date">28/11/2025</span>
-              <h3 class="news-title">
-                Đà Nẵng phát triển kinh tế xanh để trở thành thành phố sinh thái
-                hàng đầu
-              </h3>
-              <p class="news-description">
-                Đà Nẵng thúc đẩy kinh tế tuần hoàn, năng lượng sạch và du lịch
-                xanh nhằm xây dựng đô thị sinh thái, thông minh và hướng tới Net
-                Zero trước năm 2050.
-              </p>
-              <span class="read-more">Đọc thêm →</span>
-            </div>
-          </a>
-
-          <a
-            href="https://kinhtedothi.vn/thuc-day-hop-tac-viet-nam-trung-quoc-trong-linh-vuc-nong-nghiep-va-moi-truong.922793.html"
-            class="news-card"
-            target="_blank"
-          >
-            <img
-              src="https://resource.kinhtedothi.vn/resources2025/1/users/49/2-1764402885.jpg"
-              alt=""
-              class="news-image-placeholder"
-            />
-            <div class="news-content">
-              <span class="news-date">29/11/2025</span>
-              <h3 class="news-title">
-                Thúc đẩy hợp tác Việt Nam - Trung Quốc trong lĩnh vực nông
-                nghiệp và môi trường
-              </h3>
-              <p class="news-description">
-                Trong 3 ngày, từ 26 - 28/11, đoàn công tác Bộ Nông nghiệp và Môi
-                trường đã có chuyến thăm và làm việc với 7 bộ ngành, địa phương,
-                doanh nghiệp của Trung Quốc. Qua đó, đạt được nhiều kết quả tích
-                cực về hợp tác, chia sẻ kinh nghiệm trong các lĩnh vực nông
-                nghiệp và môi trường.
-              </p>
-              <span class="read-more">Đọc thêm →</span>
-            </div>
-          </a>
-
-          <a
-            href="https://kinhtedothi.vn/doi-moi-tu-duy-bao-ve-moi-truong-thu-do.922445.html"
-            class="news-card"
-            target="_blank"
-          >
-            <img
-              src="https://resource.kinhtedothi.vn/resources2025/1/users/49/ha-noi-1764344035.jpeg"
-              alt=""
-              class="news-image-placeholder"
-            />
-            <div class="news-content">
-              <span class="news-date">29/11/2025</span>
-              <h3 class="news-title">
-                Đổi mới tư duy bảo vệ môi trường Thủ đô
-              </h3>
-              <p class="news-description">
-                Là thủ đô với quy mô dân số lớn, công tác vệ sinh môi trường
-                trên địa bàn Hà Nội không chỉ dừng lại ở việc “sạch đường,
-                thoáng phố”, mà phải được nhìn nhận toàn diện và chủ động trong
-                các tình huống, từ cách tiếp cận “giải quyết sự vụ” sang “chủ
-                động phòng ngừa và đầu tư dài hạn”.
-              </p>
-              <span class="read-more">Đọc thêm →</span>
-            </div>
-          </a>
+        <div class="feature-card" onclick="openModal('water')">
+          <div class="feature-icon">💧</div>
+          <h3 class="feature-title">Bảo Vệ Nguồn Nước</h3>
+          <p class="feature-description">
+            Tiết kiệm nước sinh hoạt, không xả rác xuống sông hồ và bảo vệ
+            nguồn nước sạch. Mỗi gia đình có thể tiết kiệm 30% lượng nước.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Features Section -->
-    <section id="tips" class="features scroll-animate">
-      <div class="features-container">
-        <h2 class="section-title">🌱 HÀNH ĐỘNG VÌ MÔI TRƯỜNG</h2>
-        <div class="features-grid">
-          <div class="feature-card" onclick="openModal('recycle')">
-            <div class="feature-icon">♻️</div>
-            <h3 class="feature-title">Tái Chế Thông Minh</h3>
-            <p class="feature-description">
-              Phân loại rác tại nguồn, tái sử dụng vật liệu và giảm thiểu chất
-              thải nhựa trong cuộc sống hàng ngày. Mục tiêu nâng tỷ lệ tái chế
-              lên 50% vào 2030.
-            </p>
-          </div>
-          <div class="feature-card" onclick="openModal('plant')">
-            <div class="feature-icon">🌳</div>
-            <h3 class="feature-title">Trồng Cây Xanh</h3>
-            <p class="feature-description">
-              Tham gia các chương trình trồng cây, bảo vệ rừng và tạo không gian
-              xanh trong cộng đồng. Mỗi cây trồng hấp thụ 22kg CO2/năm.
-            </p>
-          </div>
-          <div class="feature-card" onclick="openModal('electricity')">
-            <div class="feature-icon">💡</div>
-            <h3 class="feature-title">Tiết Kiệm Năng Lượng</h3>
-            <p class="feature-description">
-              Sử dụng đèn LED, thiết bị tiết kiệm điện và năng lượng tái tạo để
-              giảm khí thải carbon. Có thể tiết kiệm 30-50% điện năng.
-            </p>
-          </div>
-          <div class="feature-card" onclick="openModal('transport')">
-            <div class="feature-icon">🚲</div>
-            <h3 class="feature-title">Giao Thông Xanh</h3>
-            <p class="feature-description">
-              Ưu tiên đi bộ, xe đạp, phương tiện công cộng thay vì xe máy, ô tô
-              cá nhân. Giảm 2.3 tấn CO2/năm cho mỗi hộ gia đình.
-            </p>
-          </div>
-          <div class="feature-card" onclick="openModal('plastic')">
-            <div class="feature-icon">🥬</div>
-            <h3 class="feature-title">Giảm Rác Nhựa</h3>
-            <p class="feature-description">
-              Chọn sản phẩm hữu cơ, địa phương và giảm thiểu thực phẩm dư thừa,
-              lãng phí. Giảm 25% lượng rác thải hàng ngày.
-            </p>
-          </div>
-          <div class="feature-card" onclick="openModal('water')">
-            <div class="feature-icon">💧</div>
-            <h3 class="feature-title">Bảo Vệ Nguồn Nước</h3>
-            <p class="feature-description">
-              Tiết kiệm nước sinh hoạt, không xả rác xuống sông hồ và bảo vệ
-              nguồn nước sạch. Mỗi gia đình có thể tiết kiệm 30% lượng nước.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Solutions Section -->
+  <section id="solutions" class="solutions scroll-animate">
+    <div class="solutions-container">
+      <h2 class="section-title">🚀 GIẢI PHÁP KHẨN CẤP</h2>
 
-    <!-- Solutions Section -->
-    <section id="solutions" class="solutions scroll-animate">
-      <div class="solutions-container">
-        <h2 class="section-title">🚀 GIẢI PHÁP KHẨN CẤP</h2>
+      <!-- Carousel -->
+      <div id="solutionsCarousel" class="carousel slide mb-4" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#solutionsCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#solutionsCarousel" data-slide-to="1"></li>
+          <li data-target="#solutionsCarousel" data-slide-to="2"></li>
+          <li data-target="#solutionsCarousel" data-slide-to="3"></li>
+          <li data-target="#solutionsCarousel" data-slide-to="4"></li>
+          <li data-target="#solutionsCarousel" data-slide-to="5"></li>
+        </ol>
 
-        <!-- Carousel -->
-        <div
-          id="solutionsCarousel"
-          class="carousel slide mb-4"
-          data-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <li
-              data-target="#solutionsCarousel"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#solutionsCarousel" data-slide-to="1"></li>
-            <li data-target="#solutionsCarousel" data-slide-to="2"></li>
-            <li data-target="#solutionsCarousel" data-slide-to="3"></li>
-            <li data-target="#solutionsCarousel" data-slide-to="4"></li>
-            <li data-target="#solutionsCarousel" data-slide-to="5"></li>
-          </ol>
-
-          <div class="carousel-inner">
-            <div
-              class="carousel-item active"
-              data-title="🏭 Kiểm Soát Nguồn Gây Ô Nhiễm"
-              data-desc="- Tăng cường giám sát đột xuất các cơ sở sản xuất có nguy cơ ô
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-title="🏭 Kiểm Soát Nguồn Gây Ô Nhiễm" data-desc="- Tăng cường giám sát đột xuất các cơ sở sản xuất có nguy cơ ô
                   nhiễm cao bằng công nghệ tự động.
                   <br />
                   - Áp dụng mức phạt nặng nhất và truy cứu hình sự đối với các
                   hành vi xả thải trái phép.
                   <br />
                   - Yêu cầu lắp đặt và vận hành hệ thống xử lý chất thải đạt
-                  chuẩn quốc gia."
-            >
-              <img
-                class="d-block w-100"
-                src="https://img.cand.com.vn/resize/800x800/NewFiles/Images/2022/05/08/khithai_16518287711021431868785-1651971807975.jpg"
-                alt="Nguồn Gây Ô Nhiễm"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>🏭 Kiểm Soát Nguồn Gây Ô Nhiễm</h5>
-                <p>
-                  - Tăng cường giám sát đột xuất các cơ sở sản xuất có nguy cơ ô
-                  nhiễm cao bằng công nghệ tự động.
-                  <br />
-                  - Áp dụng mức phạt nặng nhất và truy cứu hình sự đối với các
-                  hành vi xả thải trái phép.
-                  <br />
-                  - Yêu cầu lắp đặt và vận hành hệ thống xử lý chất thải đạt
-                  chuẩn quốc gia.
-                </p>
-              </div>
+                  chuẩn quốc gia.">
+            <img class="d-block w-100"
+              src="https://img.cand.com.vn/resize/800x800/NewFiles/Images/2022/05/08/khithai_16518287711021431868785-1651971807975.jpg"
+              alt="Nguồn Gây Ô Nhiễm" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>🏭 Kiểm Soát Nguồn Gây Ô Nhiễm</h5>
+              <p>
+                - Tăng cường giám sát đột xuất các cơ sở sản xuất có nguy cơ ô
+                nhiễm cao bằng công nghệ tự động.
+                <br />
+                - Áp dụng mức phạt nặng nhất và truy cứu hình sự đối với các
+                hành vi xả thải trái phép.
+                <br />
+                - Yêu cầu lắp đặt và vận hành hệ thống xử lý chất thải đạt
+                chuẩn quốc gia.
+              </p>
             </div>
+          </div>
 
-            <div
-              class="carousel-item"
-              data-title="♻️ Quản Lý Rác Thải Nhựa và Sinh Hoạ"
-              data-desc="- Đề ra lộ trình cấm các sản phẩm nhựa dùng một lần tại các đô
+          <div class="carousel-item" data-title="♻️ Quản Lý Rác Thải Nhựa và Sinh Hoạ" data-desc="- Đề ra lộ trình cấm các sản phẩm nhựa dùng một lần tại các đô
                 thị lớn và khu du lịch.
                 <br />
                 - Bắt buộc thực hiện phân loại rác tại nguồn (hộ gia đình, cơ
                 quan) kèm theo hệ thống thu gom phù hợp.
                 <br />
                 - Đầu tư khẩn cấp công nghệ hiện đại như đốt rác phát điện
-                thay thế bãi chôn lấp."
-            >
-              <img
-                class="d-block w-100"
-                src="https://thiennhienmoitruong.vn/upload/images/btv/btv/btv6.3/dn.jpg"
-                alt="Quản Lý Rác Thải"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>♻️ Quản Lý Rác Thải Nhựa và Sinh Hoạt</h5>
-                <p>
-                  - Đề ra lộ trình cấm các sản phẩm nhựa dùng một lần tại các đô
-                  thị lớn và khu du lịch.
-                  <br />
-                  - Bắt buộc thực hiện phân loại rác tại nguồn (hộ gia đình, cơ
-                  quan) kèm theo hệ thống thu gom phù hợp.
-                  <br />
-                  - Đầu tư khẩn cấp công nghệ hiện đại như đốt rác phát điện
-                  thay thế bãi chôn lấp.
-                </p>
-              </div>
+                thay thế bãi chôn lấp.">
+            <img class="d-block w-100" src="https://thiennhienmoitruong.vn/upload/images/btv/btv/btv6.3/dn.jpg"
+              alt="Quản Lý Rác Thải" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>♻️ Quản Lý Rác Thải Nhựa và Sinh Hoạt</h5>
+              <p>
+                - Đề ra lộ trình cấm các sản phẩm nhựa dùng một lần tại các đô
+                thị lớn và khu du lịch.
+                <br />
+                - Bắt buộc thực hiện phân loại rác tại nguồn (hộ gia đình, cơ
+                quan) kèm theo hệ thống thu gom phù hợp.
+                <br />
+                - Đầu tư khẩn cấp công nghệ hiện đại như đốt rác phát điện
+                thay thế bãi chôn lấp.
+              </p>
             </div>
+          </div>
 
-            <div
-              class="carousel-item"
-              data-title="🏞️ Bảo Vệ Hệ Sinh Thái Trọng Yếu"
-              data-desc="- Ngăn chặn triệt để nạn chặt phá rừng, đặc biệt là rừng đầu
+          <div class="carousel-item" data-title="🏞️ Bảo Vệ Hệ Sinh Thái Trọng Yếu" data-desc="- Ngăn chặn triệt để nạn chặt phá rừng, đặc biệt là rừng đầu
                 nguồn và rừng ngập mặn.
                 <br />
                 - Triển khai dự án làm sạch và phục hồi các hệ thống sông, hồ,
                 và biển đang bị ô nhiễm.
                 <br />
                 - Tăng cường trồng rừng ngập mặn để chống xói lở và hấp thụ
-                carbon ven biển."
-            >
-              <img
-                class="d-block w-100"
-                src="https://thiennhienmoitruong.vn/upload/images/btv/btv5/5.2/tang-cg.jpg"
-                alt="Cộng Đồng Hành Động"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>🏞️ Bảo Vệ Hệ Sinh Thái Trọng Yếu</h5>
-                <p>
-                  - Ngăn chặn triệt để nạn chặt phá rừng, đặc biệt là rừng đầu
-                  nguồn và rừng ngập mặn.
-                  <br />
-                  - Triển khai dự án làm sạch và phục hồi các hệ thống sông, hồ,
-                  và biển đang bị ô nhiễm.
-                  <br />
-                  - Tăng cường trồng rừng ngập mặn để chống xói lở và hấp thụ
-                  carbon ven biển.
-                </p>
-              </div>
+                carbon ven biển.">
+            <img class="d-block w-100" src="https://thiennhienmoitruong.vn/upload/images/btv/btv5/5.2/tang-cg.jpg"
+              alt="Cộng Đồng Hành Động" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>🏞️ Bảo Vệ Hệ Sinh Thái Trọng Yếu</h5>
+              <p>
+                - Ngăn chặn triệt để nạn chặt phá rừng, đặc biệt là rừng đầu
+                nguồn và rừng ngập mặn.
+                <br />
+                - Triển khai dự án làm sạch và phục hồi các hệ thống sông, hồ,
+                và biển đang bị ô nhiễm.
+                <br />
+                - Tăng cường trồng rừng ngập mặn để chống xói lở và hấp thụ
+                carbon ven biển.
+              </p>
             </div>
+          </div>
 
-            <div
-              class="carousel-item"
-              data-title="📢 Nâng Cao Nhận Thức và Trách Nhiệm"
-              data-desc="- Đưa nội dung bảo vệ môi trường vào hệ thống giáo dục quốc
+          <div class="carousel-item" data-title="📢 Nâng Cao Nhận Thức và Trách Nhiệm" data-desc="- Đưa nội dung bảo vệ môi trường vào hệ thống giáo dục quốc
                 dân một cách thực chất và bắt buộc.
                 <br />
                 - Yêu cầu chính quyền địa phương chịu trách nhiệm trực tiếp về
                 tình hình môi trường trên địa bàn.
                 <br />
                 - Thúc đẩy các chiến dịch truyền thông cộng đồng về lối sống
-                xanh và tiêu dùng bền vững."
-            >
-              <img
-                class="d-block w-100"
-                src="https://media.hoikinhtemoitruongvn.vn/images/2021/10/18/9897-1634570177-30-1629601715-anh-1.jpg"
-                alt="Trồng Cây Xanh"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>📢 Nâng Cao Nhận Thức và Trách Nhiệm</h5>
-                <p>
-                  - Đưa nội dung bảo vệ môi trường vào hệ thống giáo dục quốc
-                  dân một cách thực chất và bắt buộc.
-                  <br />
-                  - Yêu cầu chính quyền địa phương chịu trách nhiệm trực tiếp về
-                  tình hình môi trường trên địa bàn.
-                  <br />
-                  - Thúc đẩy các chiến dịch truyền thông cộng đồng về lối sống
-                  xanh và tiêu dùng bền vững.
-                </p>
-              </div>
+                xanh và tiêu dùng bền vững.">
+            <img class="d-block w-100"
+              src="https://media.hoikinhtemoitruongvn.vn/images/2021/10/18/9897-1634570177-30-1629601715-anh-1.jpg"
+              alt="Trồng Cây Xanh" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>📢 Nâng Cao Nhận Thức và Trách Nhiệm</h5>
+              <p>
+                - Đưa nội dung bảo vệ môi trường vào hệ thống giáo dục quốc
+                dân một cách thực chất và bắt buộc.
+                <br />
+                - Yêu cầu chính quyền địa phương chịu trách nhiệm trực tiếp về
+                tình hình môi trường trên địa bàn.
+                <br />
+                - Thúc đẩy các chiến dịch truyền thông cộng đồng về lối sống
+                xanh và tiêu dùng bền vững.
+              </p>
             </div>
+          </div>
 
-            <div
-              class="carousel-item"
-              data-title="🔄 Thúc Đẩy Kinh Tế Tuần Hoàn"
-              data-desc="- Cung cấp ưu đãi thuế và vốn đặc biệt cho các doanh nghiệp áp
+          <div class="carousel-item" data-title="🔄 Thúc Đẩy Kinh Tế Tuần Hoàn" data-desc="- Cung cấp ưu đãi thuế và vốn đặc biệt cho các doanh nghiệp áp
                 dụng mô hình kinh tế tuần hoàn.
                 <br />
                 - Khuyến khích mạnh mẽ việc sử dụng các nguồn năng lượng tái
                 tạo (mặt trời, gió) thay cho nhiên liệu hóa thạch.
                 <br />
                 - Hỗ trợ doanh nghiệp chuyển đổi sang công nghệ sản xuất sạch
-                hơn để tối ưu hóa nguyên liệu."
-            >
-              <img
-                class="d-block w-100"
-                src="https://tttctt.1cdn.vn/2024/04/14/kinh-te-tuan-hoan.png"
-                alt="Thúc Đẩy Kinh Tế Tuần Hoàn"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>🔄 Thúc Đẩy Kinh Tế Tuần Hoàn</h5>
-                <p>
-                  - Cung cấp ưu đãi thuế và vốn đặc biệt cho các doanh nghiệp áp
-                  dụng mô hình kinh tế tuần hoàn.
-                  <br />
-                  - Khuyến khích mạnh mẽ việc sử dụng các nguồn năng lượng tái
-                  tạo (mặt trời, gió) thay cho nhiên liệu hóa thạch.
-                  <br />
-                  - Hỗ trợ doanh nghiệp chuyển đổi sang công nghệ sản xuất sạch
-                  hơn để tối ưu hóa nguyên liệu.
-                </p>
-              </div>
+                hơn để tối ưu hóa nguyên liệu.">
+            <img class="d-block w-100" src="https://tttctt.1cdn.vn/2024/04/14/kinh-te-tuan-hoan.png"
+              alt="Thúc Đẩy Kinh Tế Tuần Hoàn" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>🔄 Thúc Đẩy Kinh Tế Tuần Hoàn</h5>
+              <p>
+                - Cung cấp ưu đãi thuế và vốn đặc biệt cho các doanh nghiệp áp
+                dụng mô hình kinh tế tuần hoàn.
+                <br />
+                - Khuyến khích mạnh mẽ việc sử dụng các nguồn năng lượng tái
+                tạo (mặt trời, gió) thay cho nhiên liệu hóa thạch.
+                <br />
+                - Hỗ trợ doanh nghiệp chuyển đổi sang công nghệ sản xuất sạch
+                hơn để tối ưu hóa nguyên liệu.
+              </p>
             </div>
+          </div>
 
-            <div
-              class="carousel-item"
-              data-title="🧑‍⚖️ Cải Cách Thể Chế và Nhân Lực"
-              data-desc="- Tăng cường ngân sách và đầu tư vào trang thiết bị quan trắc,
+          <div class="carousel-item" data-title="🧑‍⚖️ Cải Cách Thể Chế và Nhân Lực" data-desc="- Tăng cường ngân sách và đầu tư vào trang thiết bị quan trắc,
                 phân tích môi trường hiện đại.
                 <br />
                 - Đơn giản hóa thủ tục ĐTM nhưng đảm bảo tính nghiêm ngặt và
                 minh bạch trong quy trình.
                 <br />
                 - Bổ sung nhân lực có chuyên môn cao cho các cơ quan quản lý
-                môi trường từ trung ương đến địa phương."
-            >
-              <img
-                class="d-block w-100"
-                src="https://media.vneconomy.vn/images/upload/2025/04/14/4f975936-29c7-4b53-b83b-02ecac5b2269.png"
-                alt="Cải Cách Thể Chế và Nhân Lực"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>🧑‍⚖️ Cải Cách Thể Chế và Nhân Lực</h5>
-                <p>
-                  - Tăng cường ngân sách và đầu tư vào trang thiết bị quan trắc,
-                  phân tích môi trường hiện đại.
-                  <br />
-                  - Đơn giản hóa thủ tục ĐTM nhưng đảm bảo tính nghiêm ngặt và
-                  minh bạch trong quy trình.
-                  <br />
-                  - Bổ sung nhân lực có chuyên môn cao cho các cơ quan quản lý
-                  môi trường từ trung ương đến địa phương.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <a
-            class="carousel-control-prev"
-            href="#solutionsCarousel"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#solutionsCarousel"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
-        </div>
-
-        <!-- Mobile Caption - Hiển thị bên dưới carousel trên mobile -->
-        <div id="mobileCaption" class="d-md-none mobile-caption-box">
-          <h5 class="mobile-caption-title">🏭 Kiểm Soát Nguồn Gây Ô Nhiễm</h5>
-          <p class="mobile-caption-desc">
-            - Tăng cường giám sát đột xuất các cơ sở sản xuất có nguy cơ ô nhiễm
-            cao bằng công nghệ tự động.
-            <br />
-            - Áp dụng mức phạt nặng nhất và truy cứu hình sự đối với các hành vi
-            xả thải trái phép.
-            <br />
-            - Yêu cầu lắp đặt và vận hành hệ thống xử lý chất thải đạt chuẩn
-            quốc gia.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Video Tutorials Section -->
-    <section id="videos" class="video-tutorials scroll-animate">
-      <div class="video-container">
-        <h2 class="section-title">🎥 VIDEO - MÔI TRƯỜNG</h2>
-
-        <div class="video-grid">
-          <!-- Video 1 -->
-          <div class="video-card">
-            <div class="video-thumbnail">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/wj2KSCXh-7k?si=tHTTQ7TM3RNGG34J"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="video-content">
-              <h3 class="video-title">
-                Những nội dung cơ bản của Luật Bảo vệ môi trường năm 2020
-              </h3>
-              <p class="video-description">
-                Luật Bảo vệ Môi trường 2020 là văn bản pháp luật quan trọng của
-                Việt Nam quy định các nguyên tắc, chính sách và trách nhiệm
-                trong việc bảo vệ môi trường. Luật được xây dựng theo hướng tăng
-                cường quản lý rủi ro môi trường, kiểm soát ô nhiễm, thúc đẩy
-                kinh tế xanh và phát triển bền vững. Điểm nổi bật của luật là
-                phân loại dự án theo mức độ tác động môi trường, cải cách thủ
-                tục hành chính như ĐTM và giấy phép môi trường, đồng thời khuyến
-                khích cộng đồng, doanh nghiệp và người dân cùng tham gia vào
-                hoạt động bảo vệ môi trường một cách hiệu quả và minh bạch hơn.
-              </p>
-            </div>
-          </div>
-
-          <!-- Video 2 -->
-          <div class="video-card">
-            <div class="video-thumbnail">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/S2q6bD9lRkc?si=c-hKxRq3yN1UoB6M"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="video-content">
-              <h3 class="video-title">
-                'NĂNG LƯỢNG XANH' có thực sự BẢO VỆ MÔI TRƯỜNG?
-              </h3>
-              <p class="video-description">
-                Năng lượng xanh — như điện mặt trời, gió, thủy điện hay sinh
-                khối — được xem là giải pháp quan trọng giúp giảm phát thải khí
-                nhà kính và hạn chế sự phụ thuộc vào nhiên liệu hóa thạch. Về
-                tổng thể, các nguồn năng lượng này thân thiện hơn với môi
-                trường, vì trong quá trình vận hành gần như không tạo ra khí
-                CO₂, SO₂ hay bụi mịn. Tuy nhiên, năng lượng xanh không hoàn toàn
-                “xanh tuyệt đối”: việc sản xuất tấm pin mặt trời, turbine gió,
-                ắc quy lưu trữ hay xây dựng thủy điện vẫn gây tác động nhất định
-                đến đất, nước và hệ sinh thái. Bên cạnh đó, vấn đề xử lý rác
-                thải pin, ắc quy và chiếm dụng đất cũng cần được quản lý chặt
-                chẽ.
-              </p>
-            </div>
-          </div>
-
-          <!-- Video 3 -->
-          <div class="video-card">
-            <div class="video-thumbnail">
-              <iframe
-                src="https://www.youtube.com/embed/8q7_aV8eLUE"
-                title="Giảm thiểu rác thải nhựa"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              >
-              </iframe>
-            </div>
-            <div class="video-content">
-              <h3 class="video-title">Sống Xanh - Giảm Thiểu Rác Nhựa</h3>
-              <p class="video-description">
-                Hướng dẫn cách giảm 80% rác thải nhựa trong cuộc sống hàng ngày.
-                Từ việc mua sắm đến lưu trữ thực phẩm không dùng nhựa.
+                môi trường từ trung ương đến địa phương.">
+            <img class="d-block w-100"
+              src="https://media.vneconomy.vn/images/upload/2025/04/14/4f975936-29c7-4b53-b83b-02ecac5b2269.png"
+              alt="Cải Cách Thể Chế và Nhân Lực" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>🧑‍⚖️ Cải Cách Thể Chế và Nhân Lực</h5>
+              <p>
+                - Tăng cường ngân sách và đầu tư vào trang thiết bị quan trắc,
+                phân tích môi trường hiện đại.
+                <br />
+                - Đơn giản hóa thủ tục ĐTM nhưng đảm bảo tính nghiêm ngặt và
+                minh bạch trong quy trình.
+                <br />
+                - Bổ sung nhân lực có chuyên môn cao cho các cơ quan quản lý
+                môi trường từ trung ương đến địa phương.
               </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Liên Hệ Với Chúng Tôi</h2>
-      <div class="contact-form">
-        <form onsubmit="handleSubmit(event)">
-          <div class="form-row">
-            <div class="form-left">
-              <div class="form-group">
-                <label for="name">Họ và Tên</label>
-                <input type="text" id="name" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" required />
-              </div>
-              <div class="form-group">
-                <label for="subject">Chủ đề</label>
-                <input type="text" id="subject" required />
-              </div>
-            </div>
-            <div class="form-right">
-              <div class="form-group">
-                <label for="message">Nội dung</label>
-                <textarea id="message" required></textarea>
-              </div>
-            </div>
-          </div>
-          <button type="submit" class="submit-btn">Gửi Tin Nhắn</button>
-        </form>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="footer-content">
-        <div class="footer-section about">
-          <h3>Mục Đích</h3>
-          <p>
-            Trang web này được tạo ra với mục tiêu nâng cao nhận thức cộng đồng
-            về tầm quan trọng của việc bảo vệ môi trường. Chúng tôi mong muốn
-            lan tỏa thông điệp sống xanh, khuyến khích mọi người cùng chung tay
-            giảm thiểu rác thải, tái chế và sử dụng năng lượng hiệu quả. Mỗi
-            hành động nhỏ từ bạn hôm nay sẽ góp phần xây dựng một hành tinh bền
-            vững hơn cho thế hệ mai sau.
-          </p>
-        </div>
-
-        <div class="footer-section contact">
-          <h3>Liên Hệ</h3>
-          <ul>
-            <li>📧 Email: contact@husc.edu.vn</li>
-            <li>📱 Hotline: 1900 78910 JQK</li>
-            <li>📍 Địa chỉ: Huế, Việt Nam</li>
-          </ul>
-        </div>
+        <a class="carousel-control-prev" href="#solutionsCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" href="#solutionsCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
       </div>
 
-      <div class="footer-bottom">
-        <p>
-          &copy; Nhóm CNTT - Giáo dục môi trường đại cương -
-          2025-2026.1.MTR1022.001
+      <!-- Mobile Caption - Hiển thị bên dưới carousel trên mobile -->
+      <div id="mobileCaption" class="d-md-none mobile-caption-box">
+        <h5 class="mobile-caption-title">🏭 Kiểm Soát Nguồn Gây Ô Nhiễm</h5>
+        <p class="mobile-caption-desc">
+          - Tăng cường giám sát đột xuất các cơ sở sản xuất có nguy cơ ô nhiễm
+          cao bằng công nghệ tự động.
+          <br />
+          - Áp dụng mức phạt nặng nhất và truy cứu hình sự đối với các hành vi
+          xả thải trái phép.
+          <br />
+          - Yêu cầu lắp đặt và vận hành hệ thống xử lý chất thải đạt chuẩn
+          quốc gia.
         </p>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- Detail Page Modal -->
-    <div id="detailPage">
-      <div class="modal-content">
-        <button class="close-btn" onclick="closeDetailPage()">×</button>
-        <div id="detailContent"></div>
+  <!-- Video Tutorials Section -->
+  <section id="videos" class="video-tutorials scroll-animate">
+    <div class="video-container">
+      <h2 class="section-title">🎥 VIDEO - MÔI TRƯỜNG</h2>
+
+      <div class="video-grid">
+        <!-- Video 1 -->
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wj2KSCXh-7k?si=tHTTQ7TM3RNGG34J"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video-content">
+            <h3 class="video-title">
+              Những nội dung cơ bản của Luật Bảo vệ môi trường năm 2020
+            </h3>
+            <p class="video-description">
+              Luật Bảo vệ Môi trường 2020 là văn bản pháp luật quan trọng của
+              Việt Nam quy định các nguyên tắc, chính sách và trách nhiệm
+              trong việc bảo vệ môi trường. Luật được xây dựng theo hướng tăng
+              cường quản lý rủi ro môi trường, kiểm soát ô nhiễm, thúc đẩy
+              kinh tế xanh và phát triển bền vững. Điểm nổi bật của luật là
+              phân loại dự án theo mức độ tác động môi trường, cải cách thủ
+              tục hành chính như ĐTM và giấy phép môi trường, đồng thời khuyến
+              khích cộng đồng, doanh nghiệp và người dân cùng tham gia vào
+              hoạt động bảo vệ môi trường một cách hiệu quả và minh bạch hơn.
+            </p>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/S2q6bD9lRkc?si=c-hKxRq3yN1UoB6M"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video-content">
+            <h3 class="video-title">
+              'NĂNG LƯỢNG XANH' có thực sự BẢO VỆ MÔI TRƯỜNG?
+            </h3>
+            <p class="video-description">
+              Năng lượng xanh — như điện mặt trời, gió, thủy điện hay sinh
+              khối — được xem là giải pháp quan trọng giúp giảm phát thải khí
+              nhà kính và hạn chế sự phụ thuộc vào nhiên liệu hóa thạch. Về
+              tổng thể, các nguồn năng lượng này thân thiện hơn với môi
+              trường, vì trong quá trình vận hành gần như không tạo ra khí
+              CO₂, SO₂ hay bụi mịn. Tuy nhiên, năng lượng xanh không hoàn toàn
+              “xanh tuyệt đối”: việc sản xuất tấm pin mặt trời, turbine gió,
+              ắc quy lưu trữ hay xây dựng thủy điện vẫn gây tác động nhất định
+              đến đất, nước và hệ sinh thái. Bên cạnh đó, vấn đề xử lý rác
+              thải pin, ắc quy và chiếm dụng đất cũng cần được quản lý chặt
+              chẽ.
+            </p>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <iframe src="https://www.youtube.com/embed/8q7_aV8eLUE" title="Giảm thiểu rác thải nhựa" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-content">
+            <h3 class="video-title">Sống Xanh - Giảm Thiểu Rác Nhựa</h3>
+            <p class="video-description">
+              Hướng dẫn cách giảm 80% rác thải nhựa trong cuộc sống hàng ngày.
+              Từ việc mua sắm đến lưu trữ thực phẩm không dùng nhựa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Liên Hệ Với Chúng Tôi</h2>
+    <div class="contact-form">
+      <form onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-left">
+            <div class="form-group">
+              <label for="name">Họ và Tên</label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Chủ đề</label>
+              <input type="text" id="subject" required />
+            </div>
+          </div>
+          <div class="form-right">
+            <div class="form-group">
+              <label for="message">Nội dung</label>
+              <textarea id="message" required></textarea>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="submit-btn">Gửi Tin Nhắn</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>Mục Đích</h3>
+        <p>
+          Trang web này được tạo ra với mục tiêu nâng cao nhận thức cộng đồng
+          về tầm quan trọng của việc bảo vệ môi trường. Chúng tôi mong muốn
+          lan tỏa thông điệp sống xanh, khuyến khích mọi người cùng chung tay
+          giảm thiểu rác thải, tái chế và sử dụng năng lượng hiệu quả. Mỗi
+          hành động nhỏ từ bạn hôm nay sẽ góp phần xây dựng một hành tinh bền
+          vững hơn cho thế hệ mai sau.
+        </p>
+      </div>
+
+      <div class="footer-section contact">
+        <h3>Liên Hệ</h3>
+        <ul>
+          <li>📧 Email: contact@husc.edu.vn</li>
+          <li>📱 Hotline: 1900 78910 JQK</li>
+          <li>📍 Địa chỉ: Huế, Việt Nam</li>
+        </ul>
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+    <div class="footer-bottom">
+      <p>
+        &copy; Nhóm CNTT - Giáo dục môi trường đại cương -
+        2025-2026.1.MTR1022.001
+      </p>
+    </div>
+  </footer>
+
+  <!-- Detail Page Modal -->
+  <div id="detailPage">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeDetailPage()">×</button>
+      <div id="detailContent"></div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
